@@ -13,6 +13,11 @@ public class App {
         c1.dataAbertura = "07/02/2021";
         c1.agencia = "10001-0";
 
-        System.out.println(c1.saldo);
+        c1.saca(30.0);
+        c1.deposita(20.0);
+        c1.calculaRendimento();
+        System.out.println("Novo saldo = " + c1.saldo + "R$");
+
+        System.out.println(c1.impressao());
     }
 }
